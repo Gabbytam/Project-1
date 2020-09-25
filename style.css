@@ -1,26 +1,38 @@
 body {
-    background: orange;
+    /* background-image: url("https://thumbs.dreamstime.com/b/cartoon-illustration-meadows-green-hills-74536227.jpg"); */
+    /* background-image: url("https://media.istockphoto.com/illustrations/nature-illustration-id165764651?b=1&k=6&m=165764651&s=170667a&w=0&h=FJLJMFUDYnAI7tua5xMnzi35XVQ1ekBOD1LkqP9_00Q=");  */
+    /* background-image: url("https://cdn.pixabay.com/photo/2016/11/21/03/56/landscape-1844227_960_720.png"); */
+    /* background-size: cover; */
+
+    background-image: url("https://cdn.pixabay.com/photo/2020/01/06/16/29/background-4745676_960_720.png");
+    background-size: contain;
+    background-size: 40% 120%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #container {
-    background: rgba(0, 0, 0, 0.438);
+    /* background: rgba(0, 0, 0, 0.438); */
     width: 1200px;
-    height: 800px;
-    display: flex;
-    flex-direction: column-reverse;
+    height: 900px;
+    display: flex; /* initialized container to take flex display properties*/
+    flex-direction: column-reverse; /* puts everything inside the container from bottom to top */
+    
 }
 
 .row {
-    display: flex;
-    flex-wrap: nowrap;
-    border: 1px solid black;
-    background: red;
+    display: flex; /* have to also initialize display styping as flex inside the rows*/
+    flex-wrap: nowrap; /*puts everything inside the rows(squares) to fit in one line*/
+    /* border: 1px solid black; */
+    /* background: red; */
     width: 100%;
-    height: 10%;
+    height: 7.5%;
 }
 
 .square {
-    background: yellow;
+    /* background: white; */
     border: 1px solid white;
     width: 7%;
     height: 100%;
